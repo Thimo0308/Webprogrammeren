@@ -107,7 +107,7 @@ function inloggen() {
 	var gb = myForm.elements["gb"].value;
 	var ww = myForm.elements["ww"].value;
 
-	var gbArray = ["Hekman", "Koning", "ErikHekman", "ThijsWaardenburg", "Ronald", "RonaldVanEssen", "Jens"];
+	var gbArray = ["Hekman", "Koning", "ErikHekman", "ThijsWaardenburg", "Ronald", "RonaldVanEssen", "Thimo"];
 		
 
 	for(var j = 0; j < gbArray.length; j++) {
@@ -143,7 +143,7 @@ function inloggen() {
 	function reg(){
 		var gb2 = myForm.elements["gb2"].value;
 
-		var gbArray = ["Hekman", "Koning", "ErikHekman", "ThijsWaardenburg", "Ronald", "RonaldVanEssen", "Jens"];
+		var gbArray = ["Hekman", "Koning", "ErikHekman", "ThijsWaardenburg", "Ronald", "RonaldVanEssen", "Thimo"];
 	
 		for(var j = 0; j < gbArray.length; j++) {
 			if(gb2 == gbArray[j]) {
@@ -204,6 +204,7 @@ $(document).ready(function(){
 			if(inputIsEmpty.length !== 0) {
 				var bericht = "<div class='bericht'><div class='omschrijving'>"+input+"</div><div class='waardering'><div class='likes'>1</div><div class=''><a href='#' class='removeBericht'>Verwijder bericht</a><a href='#' class='addLike'>Ik vind dit bericht leuk</a></div></div><div class='addComments'><input type='text' class='inputComment' placeholder='Reageer op dit bericht ..'/><button class='addComment'>Reageer op dit bericht</button></div><div class='comments'></div>";
 				$("#berichten").prepend(bericht);
+
 			// input field wordt geleegd
 			$("#inputBericht").val('');
 			$("#error").text('');
@@ -251,73 +252,92 @@ $(document).ready(function(){
 
 });
 
+//vriendenpagina
 
-
-
-
-
-/*
-    var readURL = function(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                $('.profile-pic').attr('src', e.target.result);
-            }
-    
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    
-
-    $(".file-upload").on('change', function(){
-        readURL(this);
+$(document).ready(function(){
+    $(".addvriend1").click(function(){
+        $(".addvriend4").show();
+        $(".addvriend1").hide();
     });
-    
-    $(".upload-button").on('click', function() {
-       $(".file-upload").click();
+});
+
+$(document).ready(function(){
+    $(".addvriend2").click(function(){
+        $(".addvriend5").show();
+        $(".addvriend2").hide();
     });
-*/
-    	//registreren
+});
+
+
+$(document).ready(function(){
+    $(".addvriend4").click(function(){
+        $(".addvriend6").show();
+        $(".addvriend4").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend4").click(function(){
+        $(".addvriend4").hide();
+    });
+});
+
+$(document).ready(function(){
+    $(".addvriend5").click(function(){
+        $(".addvriend5").hide();
+    });
+});
+
+$(document).ready(function(){
+    $(".addvriend6").click(function(){
+        $(".addvriend6").hide();
+    });
+});
+
+
+$(document).ready(function(){
+    $(".addvriend7").click(function(){
+        $(".addvriend7").hide();
+    });
+});
+
+$(document).ready(function(){
+    $(".addvriend8").click(function(){
+        $(".addvriend8").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend9").click(function(){
+        $(".addvriend9").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend10").click(function(){
+        $(".addvriend10").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend11").click(function(){
+        $(".addvriend11").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend12").click(function(){
+        $(".addvriend12").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend13").click(function(){
+        $(".addvriend13").hide();
+    });
+});
+$(document).ready(function(){
+    $(".addvriend14").click(function(){
+        $(".addvriend14").hide();
+    });
+});
+
 
 	
-//vriendlijst
-    $(".adddate6").click(function(){
-        $(".adddate6").hide();
-    });
-
-    $(".adddate7").click(function(){
-        $(".adddate7").hide();
-    });
-
-    $(".adddate8").click(function(){
-        $(".adddate8").hide();
-    });
-
-    $(".adddate9").click(function(){
-        $(".adddate9").hide();
-    });
-
-    $(".adddate10").click(function(){
-        $(".adddate10").hide();
-    });
-
-    $(".adddate11").click(function(){
-        $(".adddate11").hide();
-    });
-
-    $(".adddate12").click(function(){
-        $(".adddate12").hide();
-    });
-
-    $(".adddate13").click(function(){
-        $(".adddate13").hide();
-    });
-
-
-    $(".adddate14").click(function(){
-        $(".adddate14").hide();
-    });
 
 //chatten
 $('.chat_head').click(function(){
