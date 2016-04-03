@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font: 13px/1.5 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+#bg {
+    display: inline-block;
+    width: 450px;
+    padding: 10px;
+}
+
+#bg2 {
+    display: inline-block;
+    width: 450px;
+    padding: 10px;
+    position: absolute;
+}
+.verwijdervriendbutton,
+.addvriendknop,
+.addvriend5,
+.addvriend6,
+.addvriend4 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+label,
+.requiredAttr {
+    width: 90%;
+    display: block;
+}
+.profile-pic {
+    width: 300px;
+}
+
+#sidebar {
+    background: #151718;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#sidebar.visible {
+    left: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.currentfriends {
+    width: 50%;
+    float: left
+}
+
+.newfriends {
+    width: 50%;
+    float: left
+}
+
+.currentfriends li, .newfriends li {
+    ul li a
+    background: #1c1e1f;
+    color: #ccc;
+    border-bottom: 1px solid #111;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.currentfriends li span.remove, .newfriends li span.add {
+    position: absolute;
+    right: 0;
+    padding: 7px 16px 8px;
+    background: #fff;
+    top: 0;
+    font-size: 16px;
+}
+
+ul li a {
+    background: #1c1e1f;
+    color: #ccc;
+    border-bottom: 1px solid #111;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#sidebar ul li a.active {
+    background: #088A68;
+    color: #fff;
+}
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#sidebar-btn span {
+    height: 1px;
+    background: #111;
+    margin: 5px;
+    display: block;
+
+
+}
+#header {
+    width: 100%;
+    height: 70px;
+    background: #333;
+}
+
+#header #menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header #menu ul li {
+    float: left;
+    list-style-type: none;
+    padding: 24px 0;
+    text-align: center;
+    position: relative;
+}
+
+#header #menu ul li a {
+    font-size: 15px;
+    padding: 26px 24px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+
+#header #menu ul li a:hover {
+    color: #16a085;
+}
+
+#container {
+    width: 960px;
+    margin: auto auto;
+    background: #16a085;
+    padding: 75px;
+    display: table;
+}
+
+#errorbox {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px #eee solid;
+}
+
+button {
+    margin-top: 10px;
+    padding: 20px 30px;
+    background: #eee;
+    border: 1px #eee solid;
+}
+
+.verwijder {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.reageren {
+    float: right;
+    top: 0;
+    right: 10px;
+}
+
+
+
+#vriendbericht {
+    margin: 0 auto;
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #1c1e1f;
+    display: block;
+}
+
+#message {
+    width: 50%;
+    margin-right: 50%;
+    padding: 20px;
+    font: 13px/1.5 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px #eeeeee solid;
+    -webkit-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    resize: none;
+}
+
+article {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px #eeeeee solid;
+    -webkit-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 20px 150px 20px 20px;
+    position: relative;
+}
+
+#friendlist {
+    width: 180px;
+    height: 580px;
+    margin-left: 205px;
+    background: #1c1e1f;
+    padding: 75px;
+    display: block;
+}
+
+#open-photo {
+    cursor:pointer;
+}

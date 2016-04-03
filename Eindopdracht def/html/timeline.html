@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timeline</title>
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+	<script src="../js/java.js"></script>
+	<link href="../css/styleb.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" />
+
+	<link href="../css/popup.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/popup.js"></script>
+
+
+	
+</head>
+<body>
+
+
+	<div id="sidebar">
+
+		<ul>
+			<li><a href="timeline.html" class="active">Timeline</a></li>	
+			<li><a href="vrienden.html">Vrienden</a></li>
+			<li><a href="bericht.html">Berichten</a></li>	
+			<li><a href="login.html">Uitloggen</a></li>		
+		</ul>
+
+
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+
+
+		</div>
+	</div>
+
+	<div id="container">
+
+
+
+
+		<h1>Tijdlijn</h1>
+		<div id="berichten">
+		</div>
+		<div class="addBerichten">
+			<input type="text" id="inputBericht" placeholder="Deel je SocialChat verhaal"/>
+			<button class="addBericht">Plaats verhaal</button>
+
+		</div>
+		<div class='bericht'>
+			<div class='omschrijving'>Hey Moet je nou eens kijken waar ik heen ga op vakantie!!
+				<img id="open-photo" src="../img/vakantiebestemming.jpg" alt="vakantiebestemming" ></div>
+
+
+				<div class='addComments'>
+					<input type='text' class='inputComment' placeholder='Schrijf een reactie ..'/>
+					<button class='addComment'>Reageer</button>
+				</div>
+				<div class='comments'>
+
+				</div>
+			</div>
+
+			<div class='bericht'>
+				<div class='omschrijving'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras massa nunc, hendrerit vel lacus vel, ultrices dictum elit. Pellentesque consectetur egestas mi. Donec condimentum ultricies consectetur. In ultrices odio ut rhoncus gravida. Ut quis lorem vel odio cursus aliquet eu eu nisi.</div>
+
+
+				<div class='addComments'>
+					<input type='text' class='inputComment' placeholder='Schrijf een reactie ..'/>
+					<button class='addComment'>Reageer</button>
+				</div>
+				<div class='comments'>
+
+				</div>
+			</div>			
+
+
+
+			<div id="error"></div>
+
+		</div>
+
+		</div>
+
+	</body>
+	</html>
+</body>
+</html>

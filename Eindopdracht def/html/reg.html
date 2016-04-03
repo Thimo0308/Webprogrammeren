@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<link href="../css/style.css" rel="stylesheet" />
+<script src="../js/java.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registreren</title>
+</head>
+
+
+<body>
+	<header>
+		<a href ="#" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="timeline.html">Terug naar tijdlijn</a>
+					<ul>
+					</nav>
+				</header>
+				<div id="container">
+					<form id="myForm" action="">
+						<h1>Registreren</h1>
+
+						<fieldset>
+							<legend><span class="number">1</span>Vul uw informatie in:</legend>
+							<label for="voornaam">Voornaam:</label>
+							<input class="requiredAttr" type="text" id="voornaam" name="voornaam">
+
+							<label for="achtervoornaam">Achternaam:</label>
+							<input class="requiredAttr" type="text" id="achtervoornaam" name="achtervoornaam">
+							
+							<label for="gebruikersnaam">Gebruikersnaam:</label>
+							<input class="requiredAttr" type="text" id="gb2" name="gb2">
+
+							<label for="mail">Email:</label>
+							<input class="requiredAttr" type="email" id="mail" name="user_email">
+
+							<label for="pass1">Wachtwoord:</label>
+							<input class="requiredAttr" type="password" name="pass1" id="pass1">
+							
+							<label for="pass2">Herhaal Wachtwoord:</label>
+							<input class="requiredAttr" type="password" name="pass2" id="pass2" onkeyup="checkPass(); return false;">
+							<span id="confirmMessage" class="confirmMessage"></span>
+						</fieldset>
+
+						<fieldset>
+							<legend><span class="number">2</span>Profielfoto toevoegen:</legend>
+							<img class="profile-pic" src="http://www.freematrimony.org/resources/images/unknown-male.png?pfdrid_c=true" />
+							<div class="upload-button">Kies een foto</div>
+							<br>
+							<input class="file-upload" type="file" accept="image/*"/>
+						</fieldset>
+					</form>
+					<div id="buttonreg">
+						<button type="submit" id="button" onclick="reg()">Registreren</button>
+						<p id="demo"></p>
+					</div>
+				</div>
+			</body>
+			</html>
